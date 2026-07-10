@@ -1,0 +1,44 @@
+========================================================
+ OVERLAY SENTINEL — How to run it
+========================================================
+
+WHAT YOU NEED (one-time)
+  1. A Windows PC and the Google Chrome browser.
+  2. Node.js — download the "LTS" version from https://nodejs.org
+     and install it (just click Next/Next/Finish).
+
+BEFORE YOU START
+  - Extract this zip somewhere simple like  C:\overlay-sentinel
+    (Avoid OneDrive/Desktop folders — they can interfere with the build.)
+
+RUN IT  (the easy way)
+  1. Double-click  run.bat
+  2. The first run takes 2-3 minutes (it downloads what it needs).
+  3. A browser tab opens at  http://localhost:3000
+  4. KEEP the black command window open while using the app.
+     Close that window when you're done to stop the server.
+
+HOW TO USE IT
+  1. Click "Manage sessions" (reviewer).
+  2. Create a session: type a candidate name + questions, click Create.
+  3. Click "copy link" for that session.
+  4. Open the link in a NEW browser window (or send it to the candidate).
+       - It looks like  http://localhost:3000/candidate?s=XXXXXXXX
+       - If testing alone, open it in a second Chrome window.
+  5. On the candidate page: click "I consent - begin setup",
+     ALLOW camera + microphone when Chrome asks, and allow screen share.
+  6. Answer the questions out loud (watch the mic bar move so you know
+     it hears you). The reviewer dashboard updates live.
+  7. Open the session from the reviewer list to see the risk score
+     and evidence. "Export report" downloads it as a file.
+
+IF SOMETHING GOES WRONG
+  - "Node.js is not installed" -> install it from nodejs.org, run run.bat again.
+  - Camera/mic not working -> use Chrome, and click Allow on the popups.
+      Windows: Settings > Privacy > Microphone/Camera must be ON for apps.
+  - Mic bar doesn't move when you talk -> on the answer screen there is a
+      "Microphone:" dropdown — pick a different one until the bar moves.
+  - Page won't open -> make sure the black command window is still open,
+      then refresh http://localhost:3000
+
+========================================================
